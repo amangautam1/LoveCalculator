@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo"
+    android:weightSum="1"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+    <TextView
+        android:text="Created by\nAman Gautam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_marginTop="370dp"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent" />
+
+    <CheckBox
+        android:text="Agreed to T&amp;C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:layout_marginLeft="200dp"
+        android:checked="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar5" />
+</LinearLayout>

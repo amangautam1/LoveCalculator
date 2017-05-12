@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/images"
+    android:fillViewport="true">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/icon"
+    tools:context="com.onedreamers.lovecalculator.MainActivity"
+    android:elevation="3dp"
+    android:scrollbarAlwaysDrawHorizontalTrack="true">
+
+    <TextView
+        android:text="Hello,\nWelcome to my first app which claculate percentage of love between tow persons."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:fontFamily="cursive"
+        android:textSize="24sp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="Enter name 1 :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="31dp"
+        android:id="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/background_dark"
+        android:textColorHighlight="@android:color/holo_green_dark"
+        android:textColorLink="@android:color/background_light"
+        android:textSize="18sp"
+        tools:textStyle="bold|italic"
+        android:textStyle="normal|bold|italic" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/name1"
+        android:layout_toEndOf="@+id/textView2"
+        android:textColor="?android:attr/actionMenuTextColor"
+        android:layout_below="@+id/textView2" />
+
+    <TextView
+        android:text="Enter name 2 :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:layout_below="@+id/name1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button"
+            android:layout_marginTop="17dp"
+            android:id="@+id/result"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+            android:id="@+id/name2"
+        android:textColor="?android:attr/actionMenuTextColor"
+            android:layout_below="@+id/textView3"
+            android:layout_alignStart="@+id/name1" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/name2"
+            android:id="@+id/textView9"
+            android:text=" Aman gautam \n © One Dreamers"
+            android:textColor="@android:color/background_dark"
+            android:textSize="16dp"
+            android:paddingTop="30dp"
+            android:elevation="1dp" />
+
+        <Button
+            android:text="Let's Go"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:elevation="7dp"
+            android:fontFamily="cursive"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:onClick="onClick"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/white"
+            android:layout_below="@+id/name2"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</ScrollView>
